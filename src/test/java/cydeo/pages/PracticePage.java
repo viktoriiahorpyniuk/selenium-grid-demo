@@ -42,7 +42,9 @@ public class PracticePage {
         String password = ConfigurationReader.getProperty("password");
 */
         String username = System.getenv("USERNAME");
+        System.out.println("username = " + username);
         String password = System.getenv("PASSWORD");
+        System.out.println("password = " + password);
 
         usernameEl.sendKeys(username);
         passwordEl.sendKeys(password);
